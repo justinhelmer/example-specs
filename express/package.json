@@ -1,0 +1,26 @@
+{
+  "name": "express-specs",
+  "version": "1.0.0",
+  "description": "Examples of testing express apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test:unit && npm run test:http",
+    "test:unit": "ava mware/test/*.js",
+    "test:http": "ava routers/test/*.js",
+    "start": "node index.js"
+  },
+  "ava": {
+    "failWithoutAssertions": false
+  },
+  "author": "Justin Helmer",
+  "license": "ISC",
+  "dependencies": {
+    "ava": "^0.25.0",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "sinon": "^5.1.0",
+    "superagent": "^3.8.3",
+    "supertest": "^3.1.0"
+  }
+}
